@@ -22,8 +22,8 @@ public class BlackJack {
 
     private static void inicializalas() {
         kezdoAllapot();
-        konzolraIr("Jatekos lapjai(%d, %d)".formatted(jLapok[0], jLapok[1]));
-        konzolraIr("Gep lapjai(%d, %d)".formatted(gLapok[0], gLapok[1]));
+        konzolraIr("Jatekos lapjai(%d, %d)".formatted(jLapok[0], jLapok[1]) + SEP);
+        konzolraIr("Gep lapjai(%d, %d)".formatted(gLapok[0], gLapok[1])+ SEP);
         huzas();
     }
 
@@ -54,7 +54,7 @@ public class BlackJack {
      }
      
     private static void konzolraIr(String kimenet) {
-        System.out.println(kimenet);    
+        System.out.print(kimenet);    
     }
 
     private static int jatekosOsszeg() {
